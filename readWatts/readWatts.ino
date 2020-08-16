@@ -5,7 +5,7 @@
 #define INPUT_PIN 4
 
 long probeFreq;
-float blinksKWH;
+float blinkWat;
 int delayFreq;
 
 void setup()
@@ -14,7 +14,7 @@ void setup()
 
   probeFreq = 1000 /PROB_FREQ;
   blinkWat = 1000 /IMP_PER_KWH;
-  delayFreq = 3600000 / MAX_WAT * blinksKWH;
+  delayFreq = 3600000 / MAX_WAT * blinkWat;
 }
 
 long sum;
